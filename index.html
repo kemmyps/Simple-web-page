@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <link rel="icon" type="image/x-icon" href="sources/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="sources/logo.png" alt="Logo do Site">
+            <h1>Guia Git</h1>
+        </div>
+        <nav class="content-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="title-container">
+        <h1 class="title">Git para completos iniciantes</h1>
+        <div class="container-unic">
+            <h3 class="title">Git é uma tecnologia que todo desenvolvedor deve aprender, independentemente de sua área.
+            </h3>
+        </div> <!--container-unic-->
+    </div>
+    <div class="container-flexbox1">
+        <div class="imagem-flebox1">
+            <img src="sources/ninja1.png" alt="ninja1">
+        </div> <!-- imagem-flexbox1 -->
+        <div class="container-flexbox1-block">
+            <h2 class="title">A final o que é Git?</h2>
+            <p>Git é um sistema de controle de versão distribuído e gratuito. Ele permite que você salve diferentes
+                versões de um projeto e volte a qualquer momento para uma versão anterior, tipo uma maquina do tempo. É
+                uma ferramenta essencial para trabalho em equipe e colaboração. Com o Git, você pode gerenciar seu
+                código como um verdadeiro ninja!</p>
+            <h2 class="title">Porque usar o Git?</h2>
+            <p>Usar o Git permite que você trabalhe de forma mais eficiente e segura. Com o Git, você pode facilmente
+                voltar a uma versão anterior do seu projeto se algo der errado. Além disso, ele permite que você
+                trabalhe em equipe sem se preocupar com conflitos de versão. Não seja um samurai solitário, use o Git e
+                trabalhe como um verdadeiro ninja!</p>
+        </div>
+    </div> <!--container-flexbox1 -->
+
+    <div class="container-flexbox2">
+        <div class="container-flexbox2-block-1">
+            <h2 class="title">Como instalar o Git?</h2>
+            <p>Para usar o Git, você precisa instalá-lo em seu computador. Para fazer isso, você pode baixar a versão
+                mais recente no site da web oficial. Você pode fazer o download para o seu sistema operacional a partir
+                das opções fornecidas. Também tem a opção ninja: fazer tudo por linha de comando, para isso basta
+                verificar a documentação, ler a documentação é muito importante para ser um programador ninja, já vai se
+                acostumando.</p>
+        </div>
+        <div class="container-flexbox2-block-2">
+            <h2 class="title">Como configurar o Git?</h2>
+            <p>A próxima coisa que você precisa fazer é definir seu nome de usuário e endereço de e-mail. O Git usará
+                essas informações para identificar quem fez alterações específicas nos arquivos.
+                Para definir seu nome de usuário, digite e execute estes comandos: <span class="destaque">git config
+                    --global user.name "SEU_NOME_DE_USUARIO"</span> e <span class="destaque">git config --global
+                    user.email "SEU_E-MAIL"</span> Apenas certifique-se de substituir "SEU_NOME_DE_USUARIO" e
+                "SEU_E-MAIL" pelos valores que você escolher — ou seja, seu nome de usuário e seu e-mail reais.</p>
+        </div>
+    </div> <!--container-flexbox2 -->
+
+    <div class="container-unic">
+        <h3 class="title">Agora que já esta tudo instalado e configurado, vamos ao que realmente interessa!</h3>
+    </div> <!--container-unic-->
+
+    <div class="container-flexbox3">
+        <div class="container-flexbox3-block-1">
+            <h2 class="title">Como criar e inicializar um projeto no Git</h2>
+            <p class="texto-principal">Após terminarmos de instalar e configurar o Git, agora é hora de criar nosso
+                projeto.
+                Eu criei uma pasta, no meu desktop, chamada Git and GitHub tutorial.<br>
+                Usando a linha de comando, navegue até o local do seu novo projeto. Para mim, eu executaria os seguintes
+                comandos:<br>
+                <span class="destaque">cd desktop</span><br>
+                <span class="destaque">cd Git and GitHub tutorial</span><br>
+                Agora, para inicializar um repositório do seu projeto, basta executar git init. Isso dirá ao Git para
+                começar a observar seus arquivos a cada alteração que ocorrer. Esta é a aparência na linha de
+                comando/terminal:
+            </p>
+            <div class="imagem-flebox3">
+                <img src="sources/comando.png" alt="comando">
+            </div> <!---imagem-flexbox3-->
+            <p>A primeira linha tem informações sobre meu PC e o caminho para a pasta. A segunda linha é o comando git
+                init e a terceira linha é a resposta enviada de volta me dizendo que meu repositório (ou repo) foi
+                inicializado. Ele é considerado vazio porque não informamos ao Git quais arquivos rastrear. Um
+                repositório é apenas outra maneira de definir um projeto que está sendo monitorado/rastreado pelo Git.
+            </p>
+        </div>
+
+        <div class="tooltip">
+            <div class="imagem-tooltip">
+                <img src="sources/ninja-dica.png" alt="dica ninja">
+            </div>
+            <h2 class="title-tooltip"><span class="destaque-tooltip">Dica Ninja</h2></span>
+            <p class="text-tooltip">Se você conhece a linha de comando há pouco e ainda está aprendendo a usá-la para
+                navegar pelo seu PC, sugiro usar o Visual Studio Code, um editor de código que possui um terminal para
+                executar comandos. Você pode <a href="https://code.visualstudio.com/">baixá-lo aqui.</a> Depois de
+                instalar o VS Code, abra seu projeto no editor e abra um novo terminal para seu projeto. Isso apontará
+                diretamente para o seu projeto.</p>
+        </div>
+
+    </div> <!--container-flexbox3-->
+
+    <div class="container-flexbox4">
+        <div class="container-flexbox4-block-1">
+            <h2 class="title">Arquivos de projeto no Git</h2>
+            <p>Eu criei apenas um arquivo chamado <span class="destaque">todo.txt</span> Essa é a aparência do arquivo:
+            </p>
+            <div class="imagem-flexbox4">
+                <img src="sources/lista.png" alt="lista de tarefas">
+            </div>
+        </div>
+        <div class="imagem-flexbox4-1">
+            <img src="sources/teclado.png" alt="teclado">
+        </div>
+    </div> <!--container-flexbox4 -->
+    <div class="container-flexbox4">
+        <h3 class="title">Agora que você já sabe como instalar, configurar e criar seu primeiro arquivo de projeto no
+            Git, basta continuar seus estudos para se tornar um ninja no Git. Aqui estão algumas fontes que com certeza
+            vão te ajudar.</h3>
+        <span class="list">
+            <li><a href="https://www.git-scm.com/doc">A Documentação</a>, lugar mais confiável para dominar qualquer ferramenta/tecnologia;</li>
+            <li><a href="https://www.freecodecamp.org/news/what-is-git-learn-git-version-control/">Este artigo</a> e <a href="https://www.freecodecamp.org/news/git-cheat-sheet/">esta página de dicas</a> (ambos em inglês) são boas fontes para começar;</li>
+            <li>Além disso, visite o <a href="https://www.freecodecamp.org/news/git-and-github-for-beginners/">artigo original: and GitHub Tutorial – Version Control for Beginners</a></li>
+        </span>
+        <div class="imagem-container-unic">
+            <img src="sources/logo.png" alt="logo">
+        </div>
+    </div> <!--container-unic-->
+    <div class="container-end">
+        <h2 class="title">Me ajude a melhorar!</h2>
+        <h4 class="title">Você pode visitar o <a href="https://github.com/kemmyps">repositório</a> desse simples projeto no GitHub, mal posso esperar para ver
+            suas dicas.</h4>
+    </div>
+    <footer id="fim">
+        <h5 class="title">Criado por Kemys para fins didáticos</h5>
+    </footer>
+</body>
+
+</html>
